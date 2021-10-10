@@ -1,0 +1,80 @@
+$background: #361999
+$links: #78fff1
+$highlight: #ff6495
+$raleway: 'Raleway', sans-serif
+*
+    transition: all 0.3s ease-in-out
+header
+    .navbar
+        background: $background
+        padding: 20px 0
+        .nav-item
+            .nav-link
+                color: white
+            .nav-link.active
+                color: $links
+.main-slider
+    background: $background
+    width: 100%
+    .cartas-magic-slide
+        width: 100%
+        height: 500px
+        background-image: url('../img/cartas-magic.jpg')
+        background-size: cover
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%)
+    .texto-principal
+        h1
+            color: white
+            font-family: $raleway
+            font-weight: 700
+        h2
+            color: white
+            font-family: $raleway
+            font-weight: 300
+        .btn
+            width: 300px
+            font-size: 24px
+            margin-top: 25px
+.btn-coleccionable
+    background-color: $highlight
+    color: white
+    display: inline-block
+    font-family: $raleway
+    font-weight: 700
+.informacion
+    .col-12
+        padding: 30px
+    .pasos
+        border: 4px solid $highlight
+        border-radius: 10px
+        padding: 30px
+        transition: all 0.2s ease-in-out
+        i
+            font-size: 62px
+            margin-bottom: 25px
+            color: $highlight
+        h2
+            font-family: $raleway
+            font-weight: 700
+            color: #666
+            font-size: 28px
+        p
+            font-size: 18px
+            font-family: $raleway
+            font-weight: 300
+            color: #666
+        &:hover
+            background-color: $highlight
+            i
+                color: white
+            h2, p
+                color: white
+.main
+    h2
+        font-family: $raleway
+        font-weight: 700
+.info-ultima-carta
+    background-color: #cff4fc
+    border: 1px solid #0aa2c0
+#resumenCarpeta
+    padding: 0 15px
