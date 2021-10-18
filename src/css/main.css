@@ -46,6 +46,7 @@ header .navbar .nav-item .nav-link.active {
   width: 300px;
   font-size: 24px;
   margin-top: 25px;
+  display: none;
 }
 
 .btn-coleccionable {
@@ -112,5 +113,13 @@ header .navbar .nav-item .nav-link.active {
 
 #resumenCarpeta {
   padding: 0 15px;
+}
+
+#paso2 {
+  display: none;
+}
+
+#paso2extra {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */

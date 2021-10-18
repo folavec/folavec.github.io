@@ -43,7 +43,7 @@ class Carta{
 
 var laCarpeta = []
 
-botonCrearCarpeta.addEventListener('click', (e) => {
+$(botonCrearCarpeta).on('click', function(e) {
     if (nombreCarpeta.value != "" && juegoCarpeta.value != ""){
         //BLOQUEAR EL FORM Y CREAR LA CARPETA
         e.preventDefault()
@@ -75,8 +75,9 @@ botonCrearCarpeta.addEventListener('click', (e) => {
         infoCarpeta.classList.add("opacity-1")
         infoCarpeta.classList.remove("opacity-0")
 
-        paso2.classList.add("opacity-1")
-        paso2.classList.remove("opacity-0")
+        $(paso2).show()
+        //paso2.classList.add("opacity-1")
+        //paso2.classList.remove("opacity-0")
 
         console.log(laCarpeta)
     }else{//VALIDAR CAMPOS
@@ -102,7 +103,7 @@ botonCrearCarpeta.addEventListener('click', (e) => {
     }
 })
 
-agregarCarta.addEventListener('click', (e) => {
+$(agregarCarta).on('click', function(e) {
     if (nombreCarta.value != "" && imagenCarta.value != "" && precioCarta.value != "" && estadoCarta.value != "" && infoAdicional.value != ""){
         e.preventDefault()
 
@@ -110,16 +111,18 @@ agregarCarta.addEventListener('click', (e) => {
 
         laCarpeta.push(crearCarta)
 
-        paso2extra.classList.add("opacity-1")
-        paso2extra.classList.remove("opacity-0")
+        $(paso2extra).show()
+        //paso2extra.classList.add("opacity-1")
+        //paso2extra.classList.remove("opacity-0")
 
         console.log(laCarpeta)
 
         const listaCarta = document.createElement("div")
-        listaCarta.classList.add("mt-3")
+        $(listaCarta).addClass("mt-3 p-3 row info-ultima-carta");
+        /*listaCarta.classList.add("mt-3")
         listaCarta.classList.add("p-3")
         listaCarta.classList.add("row")
-        listaCarta.classList.add("info-ultima-carta")
+        listaCarta.classList.add("info-ultima-carta")*/
         //AGREGAR INFO A COLUMNA
         listaCarta.innerHTML = `
             <div class="col-12 col-lg-4">
