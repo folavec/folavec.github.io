@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1000,
+        "nombre": "Carpeta Fernando",
+        "juego": "Pokemon"
+    },
+    {
+        "nombre": "Pikachu",
+        "imagen": "https://m.media-amazon.com/images/I/516F2ryfGRS._AC_.jpg",
+        "precioUSD": 32.4,
+        "estado": "Sellada",
+        "info": "Evolutions X/Y"
+    },
+    {
+        "nombre": "Venusaur",
+        "imagen": "https://m.media-amazon.com/images/I/61FYGpJp-wL._AC_.jpg",
+        "precioUSD": 412,
+        "estado": "Nueva",
+        "info": "Base set, Jamás jugada, No graduada"
+    },
+    {
+        "nombre": "Blastoise",
+        "imagen": "https://m.media-amazon.com/images/I/81cV3O3wnwL._AC_SL1500_.jpg",
+        "precioUSD": 355,
+        "estado": "Muy usada",
+        "info": "Tiene los bordes gastados"
+    },
+    {
+        "nombre": "Charizard",
+        "imagen": "https://m.media-amazon.com/images/I/71nbfl-JklS._AC_SL1024_.jpg",
+        "precioUSD": 20,
+        "estado": "Muy usada",
+        "info": "Re-impresión 2016"
+    }
+]

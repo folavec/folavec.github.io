@@ -16,15 +16,17 @@
     <link rel="stylesheet" href="src/css/main.css">
 
     <title>Coleccionable!</title>
+    
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="src/img/colecionable-celeste.png" width="220" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html"><img src="src/img/colecionable-celeste.png" width="220" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -47,49 +49,20 @@
         </nav>
     </header>
 
-    <div class="main-slider">
-        <div class="container-fluid g-0">
-            <div class="row g-0">
-                <div class="col-12 col-lg-5 offset-lg-1">
-                    <div class="texto-principal d-flex justify-content-center flex-column h-100">
-                        <h1>¡Tú colección de cartas en un solo lugar!</h1>
-                        <h2>Intercambia, vende y compra con tu carpeta virtual</h2>
-                        <a href="crear-carpeta.html" class="btn btn-coleccionable">Crea tu carpeta aqui</a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="cartas-magic-slide"></div>
-                </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-10 d-flex justify-content-center flex-column">
+                <h2 id="tituloCarpeta"></h2>
+                <p>Si te interesa alguna carta dale clic en "me interesa!" y añadelas a la lista, luego puedes enviarle un mensaje al dueño de la carpeta y negociar :)</p>
+            </div>
+
+            <div class="col-2">
+                <img src="" id="imagenJuegoCarpeta" class="img-fluid" alt="">
             </div>
         </div>
-    </div>
 
-    <div class="informacion">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div class="text-center pasos">
-                        <i class="fas fa-folder-open"></i>
-                        <h2>Crea tu carpeta</h2>
-                        <p>Elige el juego y agrega las cartas de tu colección</p>
-                    </div>
-                    
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="text-center pasos">
-                        <i class="fas fa-money-bill"></i>
-                        <h2>Dale un precio</h2>
-                        <p>Agrega el precio de tus cartas, asi como su estado</p>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-4">
-                    <div class="text-center pasos">
-                        <i class="fas fa-comments-dollar"></i>
-                        <h2>Vende tus cartas</h2>
-                        <p>Negocia con otros coleccionistas</p>
-                    </div>
-                </div>
-            </div>
+        <div class="row" id="cartasCarpeta">
+
         </div>
     </div>
 
@@ -106,18 +79,15 @@
     
         </footer>
     </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
-        crossorigin="anonymous"></script>
-
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
-        
-    <script src="src/js/index.js"></script>
-    <script src="src/js/main.js"></script>
 
+    <script src="src/js/carpeta.js" type="module"></script>
 </body>
-
+    
 </html>
