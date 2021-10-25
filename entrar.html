@@ -54,15 +54,78 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-12">
-                <h2>Carpetas disponibles</h2>
-                <p>Aqui puedes ver las carpetas de otros usuarios, si te interesa alguna haz clic en el botón "ver más"</p>
+            <div class="col-12 col-md-5">
+                <h4>¿Ya tienes una cuenta?</h4>
+                <h2><strong>¡Inicia sesión, vende y compra cartas!</strong></h2>
+                
+                <div class="mb-3 mt-5">
+                    <label for="emailLogin" class="form-label">E-Mail</label>
+                    <input type="email" class="form-control" id="emailLogin">
+                    <div class="invalid-feedback">
+                        Campo obligatorio.
+                    </div>
+                    <div class="email-noexiste">
+                        El correo ingresado no existe en nuestro sistema.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="passwordLogin" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="passwordLogin">
+                    <div class="invalid-feedback">
+                        Campo obligatorio.
+                    </div>
+                    <div class="password-incorrecto">
+                        La contraseña ingresada no es correcta.
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary" id="login">Iniciar Sesión</button>
+            </div>
+
+            <div class="col-12 col-md-6 offset-md-1">
+                <h4>¿Aún no tienes tu cuenta?</h4>
+                <h2><strong>¡Regístrate y empieza a coleccionar!</strong></h2>
+
+                <!--<div class="mb-3 mt-5">
+                    <label for="nombreSignin" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombreSignin">
+                </div>-->
+
+                <div class="mb-3">
+                    <label for="emailSignin" class="form-label">E-Mail</label>
+                    <input type="email" class="form-control" id="emailSignin">
+                    <div class="invalid-feedback">
+                        Campo obligatorio.
+                    </div>
+                    <div class="correo-invalido">
+                        Por favor ingrese un E-Mail valido
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="passwordSignin" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="passwordSignin">
+                    <div class="invalid-feedback">
+                        Campo obligatorio.
+                    </div>
+                    <div class="password-debil">
+                        La contraseña es muy debil, esta debe contener al menos:
+                        <ul>
+                            <li>Una letra mayuscula</li>
+                            <li>Una letra minuscula</li>
+                            <li>Un numero</li>
+                            <li>Un simbolo como @ / ! ; : ?</li>
+                            <li>8 letras, numeros o simbolos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" id="signin">Regístrate</button>
             </div>
         </div>
 
-        <div class="row" id="carpetasDisponibles">
-
-        </div>
+        
     </div>
 
     <div class="container">
@@ -86,7 +149,7 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
-    <script src="src/js/carpetas.js" type="module"></script>
+    <script src="src/js/entrar.js" type="module"></script>
 </body>
     
 </html>

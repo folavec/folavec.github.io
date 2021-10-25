@@ -38,10 +38,13 @@
                             <a class="nav-link" href="carpetas.html">Ver carpetas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Registrate</a>
+                            <a class="nav-link" href="entrar.html">Registrate</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Inicia sesión</a>
+                            <a class="nav-link" href="entrar.html">Inicia sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mi-cuenta.html">Mi cuenta</a>
                         </li>
                     </ul>
                 </div>
@@ -51,15 +54,23 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-12">
-                <h2 id="tituloCarpeta"></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et assumenda minima nemo nostrum tenetur atque placeat asperiores distinctio dolore, rerum consequatur aliquid doloremque. Deleniti sed odit veniam et nesciunt reiciendis.</p>
+            <div class="col-12 col-md-8">
+                <h2>Bienvenido <span id="emailUsuario"></span></h2>
+                <input type="text" id="idUsuario" class="d-none" disabled>
+            </div>
+            <div class="col-12 col-md-2">
+                <a href="" class="btn btn-info" id="irCrearCarpeta">Crear una carpeta</a>
+            </div>
+            <div class="col-12 col-md-2">
+                <button class="btn btn-danger" id="cerrarSesion">Cerrar Sesión</button>
             </div>
         </div>
 
-        <div class="row" id="cartasCarpeta">
+        <div class="row mt-5" id="misCarpetas">
 
         </div>
+
+        
     </div>
 
     <div class="container">
@@ -83,7 +94,7 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
-    <script src="src/js/verCarpeta.js"></script>
+    <script src="src/js/miCuenta.js" type="module"></script>
 </body>
     
 </html>

@@ -53,35 +53,68 @@
     </header>
 
     <div class="main container mt-5">
-        <div class="row">
-            <div class="col-12 col-lg-6 mb-5" id="paso1">
-                <h2>Crea tu carpeta</h2>
+        <!--<div class="row" id="noLoggeado">
+            <div class="col-12">
+                <h2>Debes iniciar sesión y crear una carpeta para poder agregar cartas</h2>
+                <a href="entrar.html" class="btn btn-primary mt-3">Iniciar sesión</a>
+            </div>
+        </div>-->
+
+        <div class="row" id="loggeado">
+            <div class="col-12 col-lg-6 mt-3">
+                <h2>Agregando cartas a: <span id="nombreCarpeta"></span></h2>
 
                 <div class="mb-3">
-                    <label for="nombreCarpeta" class="form-label">Nombre de tu carpeta</label>
-                    <input type="text" id="nombreCarpeta" name="nombreCarpeta" class="form-control" placeholder="Nombre de tu carpeta">
+                    <label for="nombreCarta" class="form-label">Nombre de la carta</label>
+                    <input type="text" name="nombreCarta" id="nombreCarta" class="form-control" placeholder="Nombre de la carta">
                     <div class="invalid-feedback">
-                        Campo obligatorio, por favor elige un nombre.
+                        Campo obligatorio.
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="nombreCarpeta" class="form-label">Juego al que pertenece</label>
-                    <select id="juegoCarpeta" name="juegoCarpeta" class="form-select">
-                        <option value="" disabled selected>Elige...</option>
-                        <option value="Pokémon">Pokemon</option>
-                        <option value="Magic The Gathering">Magic the Gathering</option>
+                    <label for="imagenCarta" class="form-label">Imagen de la carta (URL)</label>
+                    <input type="text" name="imagenCarta" id="imagenCarta" class="form-control" placeholder="Imagen de la carta (URL)">
+                    <div class="invalid-feedback">
+                        Campo obligatorio.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="precioCarta" class="form-label">Precio en USD (usa punto para los decimales)</label>
+                    <input type="number" name="precioCarta" id="precioCarta" class="form-control" placeholder="Precio en USD (usa punto para los decimales)" step=".01">
+                    <div class="invalid-feedback">
+                        Campo obligatorio.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="estadoCarta" class="form-label">Estado en que se encuentra</label>
+                    <select id="estadoCarta" name="estadoCarta" class="form-select">
+                        <option value="" disabled selected>Estado en que se encuentra</option>
+                        <option value="Ligeramente usada">Ligeramenta usada</option>
+                        <option value="Medianamente usada">Medianamente usada</option>
+                        <option value="Muy usada">Muy usada</option>
+                        <option value="Nueva">Nueva</option>
+                        <option value="Sellada">Sellada</option>
                     </select>
                     <div class="invalid-feedback">
-                        Campo obligatorio, por favor elige un juego.
+                        Campo obligatorio.
                     </div>
                 </div>
-                <button id="botonCrearCarpeta" class="btn btn-primary">Crear Carpeta</button>
+
+                <div class="mb-3">
+                    <label for="infoAdicional" class="form-label">Información adicional (edición, rareza, etc)</label>
+                    <textarea name="infoAdicional" id="infoAdicional" class="form-control" cols="30" rows="10" placeholder="Información adicional (edición, rareza, etc)"></textarea>
+                    <div class="invalid-feedback">
+                        Campo obligatorio.
+                    </div>
+                </div>
+
+                <button id="agregarCarta" class="btn btn-primary">Agregar</button>
             </div>
 
-            <div class="col-12 col-lg-6 opacity-0 text-center" id="infoCarpeta">
-                <input type="text" class="d-none" id="idDoc" disabled>
+            <div class="col-12 col-lg-6 mt-3">
+                <h2>Ultimas cartas agregadas:</h2>
+                <div id="resumenCarpeta"></div>
             </div>
-
         </div>
     </div>
 
@@ -109,7 +142,7 @@
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
-    <script src="src/js/crearCarpeta.js" type="module"></script>
+    <script src="src/js/agregarCartas.js" type="module"></script>
 </body>
 
 </html>
