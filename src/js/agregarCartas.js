@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"
 import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"
+import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js"
 
 const firebaseConfig = {
     apiKey: "AIzaSyDMqCJXbCDqz6GgOTIfO3yTr9PXLiJoksg",
@@ -9,6 +10,16 @@ const firebaseConfig = {
     messagingSenderId: "149843405117",
     appId: "1:149843405117:web:5c591278b44335ab82bd54"
 };
+
+const auth = getAuth()
+//REVISAR SI ESTA LOGGEADO Y REDIRECCIONAR
+onAuthStateChanged(auth, (user) => {
+    if (user) {
+        $(location).attr('href', "mi-cuenta.html");
+    } else {
+
+    }
+})
 
 const app = initializeApp(firebaseConfig);
 
